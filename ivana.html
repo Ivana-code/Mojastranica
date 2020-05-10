@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML i CSS praktično</title>
+<meta name="author" content="Ivana Stanišljević">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header{
+padding:80px;
+text-align:center;
+background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("html_i_css.jpg");
+background-repeat:repeat;
+color:white;
+font-family:Courier;
+}
+header h1{
+font-size:40px;
+}
+ h3{
+text-align:center;
+color:grey;
+}
+p{font-family:"Bodoni";
+margin:0;
+}
+li{
+display:inline;
+overflow:hidden;
+}
+li a{
+text-align-center;
+float: left;
+color:white;
+padding:14px 16px;
+border-right:solid 1px #bbb;
+text-decoration:none;
+}
+li a:hover{
+background-color:#FFDAB9;
+color:black;
+}
+.active{
+float: right;
+}
+li:last-child{
+border-right:none;
+}
+ul{
+overflow:hidden;
+background-color:#333;
+list-style-type:none;
+border:1px solid grey;
+}
+
+.container {  
+
+ border-radius:5px;
+background-color:#f2f2f2;
+padding: 20px 0 30px 0;
+text-align: center;
+}
+
+.container label {
+  margin: 5px 10px 5px 0;
+}
+
+.container input {
+ margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+
+}
+hr {
+  border: 1px solid #black;
+  margin-bottom: 25px;
+}
+.container button {
+  padding: 10px 20px ;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+
+}
+
+.container button:hover {
+  background-color: royalblue;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+</style>
+<body>
+<div class="header">
+<h1>HTML i CSS</h1>
+<h2>Moja prva stranica.</h2>
+</div>
+
+
+<div class="navbar">
+<ul>
+ <li> <a href="#home">Home</a></li>
+  <li><a href="html.html">HTML</a></li>
+  <li><a href="CSS.html">CSS</a></li>
+  <li><a href="o_meni.html" class="active">About</a></li>
+  </ul>
+  </div>
+<h3>HTML5 i CSS3</h3>
+<p >Sve što vidite na web mjestu rezultat je kombinacije HTML-a i CSS-a. 
+CSS djeluje u kombinaciji s HTML-om. Pomoću HTML-a možemo napraviti dugme, tabele i druge elemente, a zatim pomoću CSS-a možemo mijenjati veličinu, boju, položaj itd. Tih elemenata. </p>
+  <form class="container" >
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter email" name="email">
+<br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+ <br>
+<label for="bday">Birthday:</label>
+<input type="date" id="bday" placeholder="Enter date" name="bday">
+<br>
+ <label>
+    <input type="checkbox" name="remember"> Remember me
+  </label>
+<hr>
+ <button type="submit">Submit</button>
+</form>
+ 
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

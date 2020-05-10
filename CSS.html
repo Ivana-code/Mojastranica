@@ -1,0 +1,77 @@
+<doctype html>
+<html>
+<head>
+<title>CSS</title>
+<style>
+body{
+font-family:"Times New Roman";
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.ul li::before{
+  content: "\2022"; 
+  color: blue; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+.box {
+  padding: 0;
+  margin: 0;
+}
+
+.box li{
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+list-style-type:none;
+}
+</style>
+</head>
+<body bgcolor="PeachPuff">
+<p>CSS (Cascading Style Sheets) je jezik pomoću kog se definiše izgled elemenata veb-stranice.</p>
+<p><b>CSS3</b> je objavljen kao zvanična verzija CSS-a 12. maja 1998., čiji je razvoj započet 1998. godne i još uvijek se razvija.</p>
+<img src="css.jpg" alt="CSS" width="200" height="200">
+<p>Svaki opis se sastoji od tri elementa:</p>
+<ol>
+<li>definicija ciljnih elemenata</li>
+<li>svojstva</li>
+<li>vrijednosti</li>
+</ol>
+<p>CSS se može dodati u HTML na slijedeće načine:</p>
+<div class="ul">
+<ul>
+<li>navodeći HTML tag ciljnih elemenata</li>
+<li>navodeći klasu elemenata</li>
+<li>navodeći direktnu identifikacionu vrijednost (ID) elementa</li>
+</ul>
+</div>
+<p>Ciljni elementi se definišu na tri načina:</p>
+<div class="box">
+<ul>
+<li><b>u liniji /INLINE CSS/</b> - korisiti se STYLE atribut u HTML elementu</li>
+<li><b>interni /INTERNAL CSS</b> - koristeći &lt;STYLE&gt; element u HEAD sekciji </li>
+<li><b>eksterni /EXTERNAL CSS/</b> - koriteći CSS fajla.</li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title>HTML</title>
+<style>
+
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 225px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.pre{
+font-size:14px;
+}
+</style>
+</head>
+
+
+<body bgcolor ="grey">
+<p>HTML5 ( Hyper Text Markup Language ) je jezik koji se koristi za kreiranje dokumenta na World Wide Web-u. Nastao je uprošćavanjem <b> SGML </b> ( Standard Generalized Markup Language ) standarda sa vrhom opisa dokumenta koji se objavljuje na vebu. Osnivač HTML je W3C, <i> World Wide Web Consortium</i> na čelu sa Tim Bernerom-Lijem.  </p>
+<br>
+<div class="container">
+  <img src="html.jpg">
+  <div class="overlay">HTML logo</div>
+</div>
+<br>
+<div class="pre">
+<pre>
+ Html se sastoji iz dva osnovna dijela:
+
+    head 
+        ( sadrži opis dokumenta )
+    body   
+        ( sadrži informacije koje će se prikazati na Web stranici ).
+</pre>
+</div>
+<p>HEAD - zaglavlje sadrži obavezno TITLE - naslov.</p>
+<p> Osnove HTML-a predstavljaju <span style="font-size:1.5em"> tagovi i atributi. </span></p>
+</body>
+</html>

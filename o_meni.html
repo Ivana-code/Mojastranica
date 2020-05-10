@@ -1,0 +1,75 @@
+<doctype html>
+<html>
+<head>
+<title>O meni</title>
+</head>
+<style>
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.container:{
+  clear: both;
+  display: table;
+}
+.button {
+  border-radius:2px;
+  display: inline-block;
+  padding: 8px;
+ 
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #FFDAB9;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+<body>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Ivana Stanisljevic</h2>
+        <p style="font-family: Comic Sans MS;">Ucenik <em>"Gimnazije"</em> Gradiska. </p>
+        <p style="font-family:Courier New;">stanisljevici@icloud.com</p>
+        <p><button class="button"><a href="mailto:stanisljevic@icloud.com"</a><span>Contact</span></button></p>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
